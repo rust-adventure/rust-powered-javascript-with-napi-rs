@@ -1,10 +1,6 @@
 import test from "ava";
 
-import { sum, compile } from "../index.js";
-
-test("sum from native", (t) => {
-  t.is(sum(1, 2), 3);
-});
+import { compile } from "../index.js";
 
 test("compile with undefined options", (t) => {
   const markdown_input =
