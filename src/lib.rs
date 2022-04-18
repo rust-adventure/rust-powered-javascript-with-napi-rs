@@ -41,7 +41,6 @@ fn compile(input: String, opts: Option<JSOptions>) -> String {
   }
 
   let parser = Parser::new_ext(&input, options);
-
   // Write to String buffer.
   let mut html_output = String::new();
   html::push_html(&mut html_output, parser);
